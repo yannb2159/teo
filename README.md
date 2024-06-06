@@ -39,7 +39,7 @@ First, tob uses std::map to simulate infinite memory, map/hashmap are really slo
 Secondly, teo is using an idea that came from Tsoding(a russian dev/streamer I really like).
 
 
-You combine operations so if the program contains 4 + operations and 2 < operations, you'll end up interpreting only one + operation and m_ptr will be incremented by 4 only once.
+You combine operations so if the program contains 4 + operations and 2 < operations, you'll end up interpreting only one + operation and m_memory[m_ptr] will be incremented by 4 only once.
 
 
 And the same for the < operation.
