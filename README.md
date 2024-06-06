@@ -33,16 +33,13 @@ Why teo is faster than tob ?
 
 
 
-First, tob uses std::map to simulate infinite memory, map/hashmap are really slow, teo use an array.
+First, tob uses std::map to simulate infinite memory, map/hashmap are really slow, teo uses an array.
 
 
-Secondly, teo is using a idea that came by Tsoding(a russian dev/streamer I really like).
+Secondly, teo is using an idea that came from Tsoding(a russian dev/streamer I really like).
 
 
-The idea is you combine operations so if the program contains 4 + operations and 2 < operations.
-
-
-You'll end up interpreting only one + operation and m_ptr will be added by 4 a single time.
+You combine operations so if the program contains 4 + operations and 2 < operations, you'll end up interpreting only one + operation and m_ptr will be incremented by 4 only once.
 
 
 And the same for the < operation.
